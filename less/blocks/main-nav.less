@@ -1,0 +1,36 @@
+.main-nav {
+  position: absolute;
+  top: 0;
+  padding: 30px 100%;
+  background: url(../../img/logo-pink-white-mobile.svg) no-repeat;
+  background-position: 20px 20px;
+}
+
+.main-nav--open {
+  background-color: @base-blue;
+}
+
+.main-nav--closed {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__list {
+  .list-normalize();
+}
+
+.main-nav__item a {
+  display: none;
+
+  padding: 23px 0;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  .regular-bigger-text();
+  text-align: center;
+
+  box-shadow: 0 -1px 0 #000000,
+              inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  background-color: @base-blue;
+  color: @base-white;
+}
+

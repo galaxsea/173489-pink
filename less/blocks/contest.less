@@ -1,0 +1,106 @@
+.contest__description {
+  margin-bottom: 45px;
+
+  text-align: center;
+  .regular-text();
+  color: @base-blue;
+}
+
+.contest__field {
+  .regular-text();
+}
+
+.contest__field-title {
+  display: block;
+  margin-left: 25px;
+
+  .regular-text();
+  text-transform: uppercase;
+
+  color: #d22856;
+}
+
+.contest__field input,
+.contest__field input,
+.contest__field input {
+  &[type="text"],
+  &[type="tel"],
+  &[type="email"] {
+    .input-field();
+  }
+
+  &[placeholder] {
+    .regular-bigger-text();
+  }
+}
+
+.contest textarea {
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 30px 25px;
+
+  .regular-bigger-text();
+
+  border: 2px solid #e5e5e5;
+  background: transparent;
+  resize: none;
+  overflow: auto;
+}
+
+.contest__field-title:last-of-type {
+  text-align: center;
+}
+
+placeholder {
+  .regular-bigger-text();
+}
+
+.contest__field--grey {
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+  margin-top: 45px;
+
+  background: @base-grey;
+}
+
+.contest__field--grey .contest__field-title {
+  padding: 40px 30px;
+
+  text-align: center;
+}
+
+.contest__field--grey label {
+  .regular-bigger-text();
+  margin-left: 25px;
+}
+
+.contest__field-button {
+  width: 100%;
+  padding: 20px 0px;
+
+  .regular-bigger-text();
+  text-transform: uppercase;
+  font-weight: bold;
+
+  color: #ffffff;
+  background: #2aab6d;
+  border: none;
+  border-radius: 5px;
+}
+
+.contest__field-required {
+  padding: 40px 0px;
+
+  .regular-text();
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contest__field-required span {
+  color: #d22856;
+}
+
+.contest__popup-failure,
+.contest__popup-success {
+  display: none;
+}
